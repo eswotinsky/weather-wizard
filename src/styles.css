@@ -1,0 +1,14 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+#title {
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.display-div {
+  display: none;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: #DCF2B0;
+}

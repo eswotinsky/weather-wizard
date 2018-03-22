@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 $(function(){
   $('#weatherLocation').click(function() {
@@ -15,7 +16,7 @@ $(function(){
         success: function(response) {
           $('#errors').hide();
           $('#results').show();
-          $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
+          $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%.`);
           $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp}.`);
         },
         error: function() {
