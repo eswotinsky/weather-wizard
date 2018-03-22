@@ -13,10 +13,14 @@ $(function(){
           format: 'json'
         },
         success: function(response) {
+          $('#errors').hide();
+          $('#results').show();
           $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
           $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp}.`);
         },
         error: function() {
+          $('#results').hide();
+          $('#errors').show();
           $('#errors').text("There was an error processing your request. Please try again.")
         }
       });

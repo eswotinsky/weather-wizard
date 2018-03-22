@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weather</title>
+    <title>Weather Wizard</title>
   </head>
   <body>
     <div class="container">
-      <h1>Get Weather Conditions From Anywhere!</h1>
-      <p>Real-time weather updates from around the world. Results pulled from the <a href="https://openweathermap.org/">OpenWeatherMap</a> API.</p>
-      <label for="location">Enter a city:</label>
+      <h1>Weather Wizard <small>Real-time weather updates from around the world</small></h1>
+      <p>Results pulled from the <a href="https://openweathermap.org/">OpenWeatherMap</a> API.</p>
+      <label for="location"><strong>Enter a city:</strong></label>
       <input id="location" type="text">
       <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
-      <div class="errors"></div>
-      <div class="showHumidity"></div>
-      <div class="showTemp"></div>
+      <div id="errors"></div>
+      <div id="results">
+        <div class="showHumidity"></div>
+        <div class="showTemp"></div>
+      </div>
     </div>
   </body>
 </html>
