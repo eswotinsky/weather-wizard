@@ -12,6 +12,7 @@ A simple interface to retrieve city-specific weather data, sourced through the O
   ```API_KEY=your_api_key ```
 
   replacing "your_api_key" with your unique key from OpenWeatherMap.
+
 5. Within your preferred shell, navigate to the project folder and run the following:
 
   ```npm install```
