@@ -1,14 +1,38 @@
 body {
-  background-color: lightgoldenrodyellow;
+  background-color: #4D699D;
+  color: white;
 }
 
 #title {
   font-family: 'Arial Black', Gadget, sans-serif;
 }
 
-.display-div {
-  display: none;
-  border-radius: 20px;
-  padding: 2%;
-  background-color: #DCF2B0;
+canvas#icon {
+  width: 220px;
+  height: 220px;
+}
+
+div#results, div#errors {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+div.searchBox {
+  color: black;
+  background-color: #b0cf00;
+  padding: 5px 10px;
+  margin: auto;
+  text-align: center;
+}
+
+div.searchBox input {
+  width: 66.7%;
+}
+
+div.searchBox input, div.searchBox button {
+  padding: 6px 10px;
+}
+
+h2#city-name {
+  text-align: center;
 }

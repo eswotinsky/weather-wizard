@@ -6,15 +6,27 @@
   <body>
     <div class="container">
       <h1><span id="title">Weather Wizard</span> <small>Real-time weather updates from around the world</small></h1>
-      <p>Results pulled from the <a href="https://openweathermap.org/">OpenWeatherMap</a> API.</p>
-      <label for="location"><strong>Enter a city:</strong></label>
-      <input id="location" type="text">
-      <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
       <hr>
-      <div class="display-div "id="errors"></div>
-      <div class="display-div" id="results">
-        <div class="showHumidity"></div>
-        <div class="showTemp"></div>
+      <h2 id="city-name"></h2>
+      <canvas id="icon"></canvas>
+      <div id="error"></div>
+      <div id="results" class="row">
+        <div class="col-md-4">
+          <div id="humidity">~~~~</div>
+        </div>
+        <div class="col-md-4">
+          <div id="tempCelsius">°C</div>
+        </div>
+        <div class="col-md-4">
+          <div id="tempFahrenheit">°F</div>
+        </div>
+      </div>
+
+      <div class="searchBox">
+        <h3>Find Your Forecast</h3>
+        <input placeholder="Enter a city" id="location" type="text">
+        <button class="btn-success" id="submitButton">Get Current Weather!</button>
+        <p>Results pulled from the <a href="https://openweathermap.org/">OpenWeatherMap</a> API.</p>
       </div>
     </div>
   </body>
